@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <style>
+       
+        td{
+            color: rgb(171, 235, 22);
+        }
+        table{
+
+             border: 2px solid rgb(254, 249, 249);
+             border-collapse: collapse;
+        }
+        
+
+</style>
+
+</head>
+<body>
+   <form>
+    <table style="background-color: blue; text-align:right;" >
+        <tr style="background-color:yellow;">
+            <td colspan="2" style="text-align:left;">
+                signup</td></tr>
+        <tr>
+            <td> firstname</td><td><label for ="fname"></label>
+                <input type="text" id="fname" name="fname"></td></tr>
+        <tr>
+            <td> lastname</td><td><label for ="lname"></label>
+                <input type="text" id="lname" name="lname"></td></tr>
+        <tr>
+            <td>date of birth</td><td>
+                <select name="dob" id="dob">
+                    <option value="date">date</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option></select>
+                <select name="month" id="month" value="month">
+                    <option value="month">month</option>
+                    <option value="jan">jan</option>
+                    <option value="feb">feb</option>
+                    <option value="mar">march</option></select>
+                <select name="dob" id="dob">
+                    <option value="year">year</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option></select></td></tr>
+            <tr>
+                <td>gender</td>
+                <td style="text-align: left;"><label for ="gender"></label>
+                    <input type="radio" id="gender" name="gender">male
+                    <label for ="gender"></label>
+                    <input type="radio" id="lname" name="gender">female</td></tr>
+            <tr>
+                <td>country</td><td style="text-align: left;">
+                <select name="nation" id="nation">
+                    <option value="country">country</option>
+                    <option value="indian">indian</option>
+                    <option value="usa">usa</option>
+                </select></td></tr>
+            <tr>
+                <td>Email</td><td><label for ="email"></label>
+                <input type="text" id="email" name="email"></td></tr>
+            <tr>
+                <td>Phone</td>
+                <td> <label for ="phone"></label>
+                <input type="text" id="phone" name="phone"></td></tr>
+            <tr>
+                <td>password</td><td><label for ="password"></label>
+                <input type="password" id="fname" name="password"></td></tr>
+            <tr>
+                <td> password</td>
+                <td><label for ="password"></label>
+                <input type="password" id="fname" name="password"></td></tr>
+            <tr>
+                <td colspan="2" style="text-align: right;"> <label for ="agree"></label>
+                <input type="checkbox" id="checkbox" name="checkbox">Agree to the term of use</td></tr>
+            <tr style="background-color: yellow;"><td colspan="2" style="text-align: right;"><input type="submit"value="submit" style="background: rgb(13, 146, 42);">
+                <input type="submit"value="cancel" style="background-color: rgb(197, 95, 12);"></td></tr>
+    </table></form> 
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formvalidation</title>
+</head>
+<body>
+    <script>
+        function validateform()
+        {
+        var name=document.getElementById("name").value;
+        var password=document.getElementById("pass").value;
+        if(name==null || name=="")
+        {
+        document.getElementById("namespan").innerHTML="please enter value"
+        return false;
+        }
+        else if(password.length<6)
+        {
+        document.getElementById("passspan").innerHTML="enter six digit password"
+        return false;
+        }
+        }
+        function clearmsg(sp)
+        {
+            document.getElementById(sp).innerHTML="";
+        }
+    </script>
+    <form name="myform"method="post" action="abc.html" onsubmit="return validateform()">
+    <label>Name:</label>
+    <input type="text" id="name" onkeyup="clearmsg('namespan')"><br>
+    <span id="namespan" style="color: red;"></span>
+    &nbsp;&nbsp; &nbsp;<br>
+    <label>password:</label>
+    <input type="password" id="pass" onkeyup="clearmsg('passspan')"><br>
+    <span id="passspan" style="color: red;"></span>
+    &nbsp; &nbsp; &nbsp;<br>
+    <input type="submit" value="submit">
+
+</form>
+</body>
+</html>
